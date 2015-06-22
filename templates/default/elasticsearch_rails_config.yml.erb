@@ -1,0 +1,5 @@
+<%= @environment %>:
+  host: <%= @elasticsearch[:host] %>
+  transport_options:
+    request:
+      timeout: <%= @elasticsearch[:timeout] || 10 %>
